@@ -13,6 +13,8 @@ import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "tb_order")
@@ -23,8 +25,11 @@ public class Order implements Serializable{
 	@Id 
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
+	@NotBlank(message ="{adress.not.valid}")
 	private String address;
+	@NotNull(message ="{latitude.not.valid}")
 	private Double latitude;
+	@NotNull(message ="{longitude.not.valid}")
 	private Double longitude;
 	private Instant moment;
 	private OrderStatus status;
