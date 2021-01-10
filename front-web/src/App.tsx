@@ -1,10 +1,15 @@
- import './App.css';
-import Navbar from './Navbar';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import './App.css';
+
 import Routers from './Routers';
 
 function App() {
-  return (    
+  return (   
+    <> 
       <Routers />    
+      <ToastContainer />
+      </>
   );
 }
 
