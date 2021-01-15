@@ -1,8 +1,15 @@
 # dsdeliver-sds2
 
-Project of orders in React front web, React Native front mobile, Java Spring Boot API
+Project of orders in 
+
+React front web, 
+
+React Native front mobile, 
+
+Java Spring Boot API backend
 
 Request Examples API
+
 POST Example:
 
 ```
